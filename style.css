@@ -1,0 +1,270 @@
+@font-face {
+	font-family: shadded;
+	src: url(Shadded South Personal Use.ttf);
+	font-family: Lalezar;
+	src: url(Lalezar-Regular.ttf);
+}
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 20px;
+}
+body{
+	background-color: #6BE0FA;
+}
+#main{
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 0px;
+	transform: translate(-50%);
+	width: 450px;
+	height: 100%;
+	box-shadow: 0px 0px 10px #EEC87E;
+	background-color: #EEC87E;
+}
+#rocket{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translate(-50%);
+	background-image: url(rocket.png);
+	background-size: cover;
+}
+.digit{
+	position: absolute;
+/*	top: -20%;
+*/	color: black;
+	animation: digit 10s linear;
+}
+@keyframes digit{
+	from{
+		top: 0%;
+	}
+	to{
+		top: 96%;
+	}
+}
+
+#input-container{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 5%;
+	width: 100%;
+	padding: 3px;
+}
+#input{
+	width: 100%;
+	height: 90%;
+	color: #3F1B42;
+}
+.in2 {
+	display: none;
+}
+#health{
+	direction: rtl;
+	display: none;
+	top: 5px;
+	left: 17%;
+	width: 220px;
+	height: 50px;
+	position: absolute;
+	color: #BC243C;
+}
+#level{
+	position: absolute;
+	top: 30%;
+	margin: 0px 3% 0px 3%;
+	width: 94%;
+	height: 20%;
+	background-color: rgba(230, 235, 255, 0.5);
+	border-radius: 10px;
+	animation: level 2s linear;
+}
+#textlevel{
+	position: absolute;
+	top: 43%;
+	left: 43%;
+	color: #81a2ff;
+}
+@keyframes level{
+	from{
+		top: -10%;
+	}
+	to{
+		top: 30%;
+	}
+}
+#start{
+	background-color: #FFFD9C;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+}
+table{
+	position: absolute;
+	left: 38%;
+	top: 0%;
+}
+#start td{
+	height: 77px;
+	width: 300px;
+	padding: 5px;
+}
+#btn {
+	width: 100%;
+	height: 100%;
+}
+#btn:hover{
+	border-radius: 20px;
+}
+#health img{
+	width: 22%;
+	background-size: cover;
+	margin-right: -10px;
+}
+#splash{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #A9DFBF;
+}
+#bit{
+	font-family: Lalezar;
+	font-size: 30px;
+	position: absolute;
+	margin: auto;
+	left: 44%;
+	top: 40%;
+}
+#design{
+	font-family: shadded;
+	font-size: 20px;
+	position: absolute;
+	margin: auto;
+	left: 43%;
+	top: 93%;
+}
+.key{
+	width: 85%;
+	height: 100%;
+}
+.keys{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	bottom: 4.5%;
+	padding-left: 4px;
+}
+#akey1{
+	display: flex;
+}
+#akey2{
+	display: flex;
+}
+#akey1 div{
+	width: 20%;
+	height: 100%;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	background-color: rgba(255, 2555, 255, 0.3);
+}
+#akey2 div{
+	width: 20%;
+	height: 100%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	background-color: rgba(255, 2555, 255, 0.3);
+}
+#enter{
+	position: absolute;
+	width: 14.4%;
+	left: 85%;
+	height: 50%;
+	bottom: 0px;
+	float: right;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	background-color: rgba(255, 2555, 255, 0.3);
+}
+#del {
+	position: absolute;
+	width: 14.4%;
+	left: 85%;
+	height: 50%;
+	float: right;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	background-color: rgba(255, 2555, 255, 0.3);
+}
+.keys div{
+	text-align: center;
+	cursor: pointer;
+}
+
+#del img {
+	position: relative;
+	height: 80%;
+	width: 70%;
+	bottom: 2px;
+}
+
+#akey1 div div {
+	display: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	table{
+		left: 9%;
+		top: 3%;
+	}
+	#main{
+	    width:100%;
+	}
+	#health{
+	    top:0px;
+	    left:0px;
+	    direction: ltr;
+	}
+	#bit{
+		left: 33%;
+	}
+	#design{
+		left: 27%;
+	}
+	#rocket{
+		bottom: 15%;
+	}
+	.in1 {
+		display: none;
+	}
+	#input {
+		position: absolute;
+		height: 70%;
+		color: #3F1B42;
+		bottom: 10%;
+	}
+	.in2 {
+		display: block;
+	}
+	.keys {
+		display: block;
+	}
+	.key {
+		display: block;
+	}
+}
